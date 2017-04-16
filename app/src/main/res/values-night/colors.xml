@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/md_grey_900</color>
+    <color name="colorPrimaryDark">@color/md_black_1000</color>
+    <color name="colorAccent">@color/bg_health_accent</color>
+    <color name="textColorPrimary">#ffffffff</color>
+    <color name="textColorSecondary">#b3ffffff</color>
+    <color name="textColorPrimaryReverse">@color/md_grey_800</color>
+    <color name="textColorSecondaryReverse">@color/md_grey_600</color>
+    <color name="shadow">@color/md_grey_800</color>
+    <color name="background">#303030</color>
+    <color name="background_card">@color/md_grey_800</color>
+    <color name="background_reverse">@color/md_white_1000</color>
+    <color name="background_header">@color/md_grey_800</color>
+    <color name="background_divider">@color/md_grey_700</color>
+    <color name="background_month">@color/md_grey_600</color>
+    <color name="background_activity">@color/md_grey_600</color>
+
+    <color name="bg_health">@color/md_red_500</color>
+    <color name="bg_restaurant">@color/md_indigo_500</color>
+    <color name="bg_store">@color/md_green_500</color>
+    <color name="bg_animals">@color/md_brown_500</color>
+    <color name="bg_entertainment">@color/md_purple_500</color>
+    <color name="bg_home">@color/md_teal_500</color>
+    <color name="bg_electronic">@color/md_blue_grey_500</color>
+    <color name="bg_bank">@color/md_yellow_500</color>
+    <color name="bg_personal">@color/md_pink_500</color>
+    <color name="bg_transport">@color/md_orange_500</color>
+    <color name="bg_cloth">@color/md_blue_500</color>
+    <color name="bg_others">@color/md_grey_500</color>
+
+    <color name="bg_health_accent">@color/md_red_A200</color>
+    <color name="bg_restaurant_accent">@color/md_indigo_A200</color>
+    <color name="bg_store_accent">@color/md_green_A200</color>
+    <color name="bg_animals_accent">@color/md_brown_200</color>
+    <color name="bg_entertainment_accent">@color/md_purple_A200</color>
+    <color name="bg_home_accent">@color/md_teal_A200</color>
+    <color name="bg_electronic_accent">@color/md_blue_grey_200</color>
+    <color name="bg_bank_accent">@color/md_yellow_A200</color>
+    <color name="bg_personal_accent">@color/md_pink_A200</color>
+    <color name="bg_transport_accent">@color/md_orange_A200</color>
+    <color name="bg_cloth_accent">@color/md_blue_A200</color>
+    <color name="bg_others_accent">@color/md_grey_200</color>
+
+    <color name="bg_health_text_color">@color/md_white_1000</color>
+    <color name="bg_restaurant_text_color">@color/md_white_1000</color>
+    <color name="bg_store_text_color">@color/md_white_1000</color>
+    <color name="bg_animals_text_color">@color/md_white_1000</color>
+    <color name="bg_entertainment_text_color">@color/md_white_1000</color>
+    <color name="bg_home_text_color">@color/md_white_1000</color>
+    <color name="bg_electronic_text_color">@color/md_white_1000</color>
+    <color name="bg_bank_text_color">#de000000</color>
+    <color name="bg_personal_text_color">@color/md_white_1000</color>
+    <color name="bg_transport_text_color">#de000000</color>
+    <color name="bg_cloth_text_color">@color/md_white_1000</color>
+    <color name="bg_others_text_color">@color/md_white_1000</color>
+
+</resources>

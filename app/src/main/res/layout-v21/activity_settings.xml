@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/colorAccent"/>
+
+        <RelativeLayout
+            android:id="@+id/activity_settings_rl1"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/ic_attach_money_white_24dp"/>
+
+            <TextView
+                android:id="@+id/activity_settings_currency_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="42dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="16sp"
+                android:text="@string/activity_settings_currency_title"/>
+
+            <Spinner
+                android:id="@+id/activity_settings_currency_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_settings_currency_title"
+                android:layout_marginLeft="42dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="56dp"
+            android:layout_below="@id/activity_settings_rl1"
+            android:background="@color/background_divider"/>
+
+        <RelativeLayout
+            android:id="@+id/activity_settings_rl2"
+            android:layout_below="@id/activity_settings_rl1"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/ic_weather_night_white_24dp"/>
+
+            <TextView
+                android:id="@+id/activity_settings_daynight_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="42dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="16sp"
+                android:text="@string/activity_settings_daynight_title"/>
+
+            <TextView
+                android:id="@+id/activity_settings_daynight_text"
+                android:layout_below="@id/activity_settings_daynight_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="14sp"
+                android:text="@string/activity_settings_daynight_text"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_settings_info_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/activity_settings_rl2">
+
+            <TextView
+                android:id="@+id/activity_settings_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/activity_settings_info"
+                android:textSize="12sp"
+                android:layout_marginLeft="42dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/textColorSecondary"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@id/activity_settings_info_rl"
+            android:paddingRight="8sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:gravity="right"
+            android:background="@color/background_divider"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_settings_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="60dp"
+                android:gravity="center"
+                android:text="@string/activity_settings_done"
+                android:textSize="14sp"
+                android:padding="6dp"
+                android:clickable="true"
+                android:background="@drawable/ripple_light_rectangular"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

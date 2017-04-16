@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/action_drawer_menu_list">
+        <item android:id="@+id/menu_expenses"
+            android:icon="@drawable/ic_attach_money_white_24dp"
+            android:title="@string/menu_expenses"/>
+        <item android:id="@+id/menu_food"
+            android:icon="@drawable/ic_restaurant_white_24dp"
+            android:title="@string/fragment_dialog_categories_restaurant_m"/>
+    </group>
+</menu>

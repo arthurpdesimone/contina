@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_dialog_categories_scrollView"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/background"
+    style="@style/MarginPoint">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fragment_dialog_categories_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/background"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/fragment_dialog_categories_text_ll"
+                android:background="@color/background_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fragment_dialog_categories_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:textSize="16sp"
+                    android:text="@string/fragment_dialog_categories_text"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/textColorSecondary"/>
+
+                <ImageView
+                    android:id="@+id/fragment_dialog_categories_close"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="12dp"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/textColorSecondary"
+                    android:src="@drawable/ic_highlight_off_black_24dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_dialog_categories_ll1"
+                android:layout_below="@id/fragment_dialog_categories_text_ll"
+                android:orientation="vertical"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_health"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_health"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_health_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_health"
+                            android:text="@string/fragment_dialog_categories_health_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_restaurant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_restaurant"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_restaurant_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_restaurant"
+                            android:text="@string/fragment_dialog_categories_restaurant_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_market"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_market"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_market_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_market"
+                            android:text="@string/fragment_dialog_categories_market_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_animals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_animals"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_animals_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_animals"
+                            android:text="@string/fragment_dialog_categories_animals_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_dialog_categories_ll2"
+                android:layout_below="@id/fragment_dialog_categories_ll1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_entertainment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_entertainment"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_entertainment_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_entertainment"
+                            android:text="@string/fragment_dialog_categories_entertainment_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_home"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_home_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_home"
+                            android:text="@string/fragment_dialog_categories_home_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_electronics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_eletronics"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_electronics_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_electronics"
+                            android:text="@string/fragment_dialog_categories_electronics_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_bank"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_bank_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_bank"
+                            android:text="@string/fragment_dialog_categories_bank_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_dialog_categories_ll3"
+                android:layout_below="@id/fragment_dialog_categories_ll2"
+                android:orientation="vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_transport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_transport"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_transport_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_transport"
+                            android:text="@string/fragment_dialog_categories_transport_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_clothing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_clothing"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_clothing_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_clothing"
+                            android:text="@string/fragment_dialog_categories_clothing_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_others"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_others"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_others_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_others"
+                            android:text="@string/fragment_dialog_categories_others_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:layout_margin="4dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_dialog_categories_personal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_personal"/>
+
+                        <TextView
+                            android:id="@+id/fragment_dialog_categories_personal_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:layout_below="@id/fragment_dialog_categories_personal"
+                            android:text="@string/fragment_dialog_categories_personal_m"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</ScrollView>
+
+

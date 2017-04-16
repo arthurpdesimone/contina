@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/fragment_fullscreen_item_header_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_red_700">
+
+        <ImageView
+            android:id="@+id/fragment_fullscreen_item_header_category"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_health"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:id="@+id/fragment_fullscreen_item_header_what"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/md_white_1000"
+            android:text="Strepsils"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/fragment_fullscreen_item_header_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fragment_fullscreen_item_header_rl"
+        android:background="@color/background_divider"/>
+
+    <LinearLayout
+        android:id="@+id/fragment_fullscreen_item_map_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/fragment_fullscreen_item_header_divider">
+
+        <ImageView
+            android:id="@+id/mapa"
+            android:layout_width="wrap_content"
+            android:layout_height="190dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mapa"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_divider"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_fullscreen_item_items_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/fragment_fullscreen_item_map_ll">
+
+        <ImageView
+            android:id="@+id/fragment_fullscreen_item_location_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:tint="@color/textColorPrimary"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_location_on_white_24dp"/>
+
+        <EditText
+            android:id="@+id/fragment_fullscreen_item_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="16dp"
+            android:drawableRight="@drawable/ic_clear_black_24dp"
+            android:drawableTint="@color/textColorPrimary"
+            android:drawablePadding="4dp"
+            android:textSize="16sp"
+            android:textColorHint="@color/md_grey_500"
+            android:inputType="textAutoComplete|textCapWords"
+            android:maxLines="2"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColorSecondary"
+            android:hint="@string/fragment_dialog_where_hint"
+            android:text="Rosário"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_fullscreen_item_items_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/fragment_fullscreen_item_items_rl">
+
+        <ImageView
+            android:id="@+id/fragment_fullscreen_item_location_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:tint="@color/textColorPrimary"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_attach_money_white_24dp"/>
+
+        <EditText
+            android:id="@+id/fragment_fullscreen_item_location2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="16dp"
+            android:drawableRight="@drawable/ic_clear_black_24dp"
+            android:drawableTint="@color/textColorPrimary"
+            android:drawablePadding="4dp"
+            android:textSize="16sp"
+            android:textColorHint="@color/md_grey_500"
+            android:inputType="textAutoComplete|textCapWords"
+            android:maxLines="2"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColorSecondary"
+            android:hint="@string/fragment_dialog_where_hint"
+            android:text="R$ 720,00"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/fragment_fullscreen_item_items_rl2"
+        android:paddingRight="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:background="@color/background_divider"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragment_fullscreen_item_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dp"
+            android:gravity="center"
+            android:text="@string/fragment_dialog_new_item_cancel"
+            android:textSize="14sp"
+            android:padding="6dp"
+            android:clickable="true"
+            android:background="@drawable/ripple_light_rectangular"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textColorSecondary"/>
+
+        <TextView
+            android:id="@+id/fragment_fullscreen_item_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="72dp"
+            android:gravity="center"
+            android:text="@string/fragment_dialog_new_item_save"
+            android:textSize="14sp"
+            android:padding="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:clickable="true"
+            android:background="@drawable/bg_round_accent_ripple"
+            android:textColor="@color/md_white_1000"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

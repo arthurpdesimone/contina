@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/background_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/fragment_dialog_new_item_category"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <RelativeLayout
+            android:id="@+id/fragment_dialog_where_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="4dp">
+
+            <EditText
+                android:id="@+id/fragment_dialog_where"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColorHint="@color/md_grey_500"
+                android:inputType="textAutoComplete|textCapWords"
+                android:maxLines="2"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/textColorSecondary"
+                android:hint="@string/fragment_dialog_where_hint"
+                android:layout_marginRight="16dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_dialog_what_ll"
+            android:layout_below="@id/fragment_dialog_where_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="4dp">
+
+            <EditText
+                android:id="@+id/fragment_dialog_what"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColorHint="@color/md_grey_500"
+                android:fontFamily="sans-serif"
+                android:maxLines="2"
+                android:inputType="textAutoComplete|textCapWords"
+                android:textColor="@color/textColorSecondary"
+                android:hint="@string/fragment_dialog_what_hint"
+                android:layout_marginRight="16dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_dialog_price_ll"
+            android:layout_below="@id/fragment_dialog_what_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="16dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fragment_dialog_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/md_grey_500"
+                    android:textColor="@color/textColorSecondary"
+                    android:inputType="phone"
+                    android:minEms="5"
+                    android:maxEms="8"
+                    android:maxLines="2"
+                    android:hint="@string/fragment_dialog_price_hint"
+                    android:layout_below="@id/fragment_dialog_what"
+                    android:layout_marginRight="8dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:tint="@color/md_green_600"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:background="@drawable/ripple_light"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_add_circle_black_24dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:tint="@color/md_red_500"
+                    android:visibility="gone"
+                    android:background="@drawable/ripple_light"
+                    android:clickable="true"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_remove_circle_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/fragment_dialog_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thu, Jul 21, 2016"
+                    android:textColor="@color/colorAccent"
+                    android:padding="4dp"/>
+
+                <TextView
+                    android:id="@+id/fragment_dialog_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21:00"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorAccent"
+                    android:padding="4dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_dialog_paid_ll"
+            android:orientation="vertical"
+            android:layout_below="@id/fragment_dialog_price_ll"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/fragment_dialog_who_paid_ll"
+                android:orientation="horizontal"
+                android:layout_below="@id/fragment_dialog_paid_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fragment_dialog_paid_with"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="2dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="14sp"
+                    android:text="@string/fragment_dialog_paid_with"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_below="@id/fragment_dialog_paid_with"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_cash"/>
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_credit_card"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_dialog_price_total_ll"
+                android:orientation="vertical"
+                android:layout_below="@id/fragment_dialog_price_ll"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fragment_dialog_price_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginRight="4dp"
+                    android:textSize="14sp"
+                    android:text="@string/fragment_dialog_price_total"/>
+
+                <TextView
+                    android:id="@+id/fragment_dialog_price_total_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="20sp"
+                    android:text="R$ 720,00"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@id/fragment_dialog_paid_ll"
+            android:gravity="right|center_vertical"
+            android:background="@color/background_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fragment_dialog_new_item_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="64dp"
+                android:gravity="center"
+                android:text="@string/fragment_dialog_new_item_cancel"
+                android:textSize="14sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:minHeight="32dp"
+                android:clickable="true"
+                android:background="@drawable/ripple_light_rectangular"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/textColorPrimary"/>
+
+            <TextView
+                android:id="@+id/fragment_dialog_new_item_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="64dp"
+                android:gravity="center"
+                android:text="@string/fragment_dialog_new_item_save"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:clickable="true"
+                android:background="@drawable/bg_button_accent"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

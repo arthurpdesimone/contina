@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Plata</string>
+    <string name="activity_activities">ATIVIDADES</string>
+    <string name="activity_history">HISTÓRICO</string>
+    <string name="activity_settings_currency_title">Moeda</string>
+    <string name="activity_settings_daynight_text">Isso permite que o aplicativo mude para um tema claro ou escuro automaticamente</string>
+    <string name="activity_settings_daynight_title">Modo DiaNoite</string>
+    <string name="activity_settings_done">FEITO</string>
+    <string name="activity_settings_info">Todas as alterações são salvas automaticamente.</string>
+    <string name="fragment_dialog_categories_animals">ANIMAIS</string>
+    <string name="fragment_dialog_categories_bank">BANCO</string>
+    <string name="fragment_dialog_categories_clothing">ROUPA</string>
+    <string name="fragment_dialog_categories_electronics">ELETRÔNICO</string>
+    <string name="fragment_dialog_categories_entertainment">DIVERSÃO</string>
+    <string name="fragment_dialog_categories_health">SAÚDE</string>
+    <string name="fragment_dialog_categories_home">CASA</string>
+    <string name="fragment_dialog_categories_market">LOJA</string>
+    <string name="fragment_dialog_categories_others">OUTROS</string>
+    <string name="fragment_dialog_categories_personal">PESSOAL</string>
+    <string name="fragment_dialog_categories_restaurant">COMIDA</string>
+    <string name="fragment_dialog_categories_text">Escolha uma categoria:</string>
+    <string name="fragment_dialog_categories_transport">TRANSPORT</string>
+    <string name="fragment_dialog_new_item_cancel">CANCELAR</string>
+    <string name="fragment_dialog_new_item_save">SALVAR</string>
+    <string name="fragment_dialog_paid_with">PAGO COM:</string>
+    <string name="fragment_dialog_price_hint">Preço</string>
+    <string name="fragment_dialog_price_total"></string>
+    <string name="fragment_dialog_what_hint">O que?</string>
+    <string name="fragment_dialog_where_hint">Onde?</string>
+    <string name="fragment_dialog_who_paid">QUEM PAGOU:</string>
+    <string name="fragment_history_item_payment_card">CARTÃO</string>
+    <string name="fragment_history_item_payment_cash">DINHEIRO</string>
+    <string name="fragment_history_item_undo">DESFAZER</string>
+    <string name="fragment_dialog_categories_transport_m">Transporte</string>
+    <string name="fragment_dialog_categories_restaurant_m">Comida</string>
+    <string name="fragment_dialog_categories_personal_m">Pessoal</string>
+    <string name="fragment_dialog_categories_others_m">Outros</string>
+    <string name="fragment_dialog_categories_market_m">Loja</string>
+    <string name="fragment_dialog_categories_home_m">Casa</string>
+    <string name="fragment_dialog_categories_health_m">Saúde</string>
+    <string name="fragment_dialog_categories_entertainment_m">Diversão</string>
+    <string name="fragment_dialog_categories_electronics_m">Eletrônico</string>
+    <string name="fragment_dialog_categories_clothing_m">Roupa</string>
+    <string name="fragment_dialog_categories_bank_m">Banco</string>
+    <string name="fragment_dialog_categories_animals_m">Animais</string>
+</resources>

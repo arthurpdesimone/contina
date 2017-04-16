@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "480672846537",
+    "firebase_url": "https://plata-c1947.firebaseio.com",
+    "project_id": "plata-c1947",
+    "storage_bucket": "plata-c1947.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480672846537:android:6b53e3946c43a6fc",
+        "android_client_info": {
+          "package_name": "com.ruidev.contina.wear"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480672846537-snib0natkj0h4dlqhlk9isdnhrjujagu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ruidev.contina.wear",
+            "certificate_hash": "c8bd964f24c1fe5533afe9b9ef4b245fc69e53e0"
+          }
+        },
+        {
+          "client_id": "480672846537-bih59it8toslapnnahungru5991cjium.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1rJtF62aMXPnz8DDX4Qpmif0xUi2Tt38"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480672846537-bih59it8toslapnnahungru5991cjium.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

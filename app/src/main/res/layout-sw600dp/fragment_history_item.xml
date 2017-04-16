@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/fragment_history_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fragment_history_item_card_view"
+        style="@style/MarginPoint"
+        app:cardBackgroundColor="@color/background"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="4dp"
+        android:clickable="true"
+        android:elevation="2dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/fragment_history_item_category_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/background_category"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/fragment_history_item_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/fragment_dialog_categories_home"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/fragment_history_item_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_mode_edit_white_24dp"
+                        android:background="@drawable/bg_round_white_ripple"
+                        android:clickable="true"
+                        android:padding="6dp"
+                        android:layout_marginRight="12dp"
+                        android:tint="@color/md_grey_600"/>
+
+                    <ImageView
+                        android:id="@+id/fragment_history_item_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_delete_white_24dp"
+                        android:background="@drawable/bg_round_white_ripple"
+                        android:clickable="true"
+                        android:padding="6dp"
+                        android:tint="@color/md_grey_600"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_history_item_click_expand_collapse"
+                android:background="@color/background_header"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fragment_history_item_drop_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:foregroundGravity="center"
+                    android:clickable="true"
+                    android:layout_margin="8dp"
+                    android:padding="4dp"
+                    android:background="@drawable/bg_ripple"
+                    android:tint="@color/textColorPrimary"
+                    android:src="@drawable/ic_keyboard_arrow_down_white_24dp"/>
+
+                <LinearLayout
+                    android:id="@+id/fragment_history_item_ll"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_history_item_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif"
+                        android:text="R$ 25,70"/>
+
+                    <TextView
+                        android:id="@+id/fragment_history_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="6dp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/textColorSecondary"
+                        android:text="Strepsils"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:layout_below="@id/fragment_history_item_ll"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_history_item_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:fontFamily="sans-serif-light"
+                        android:text="21/07/2016"/>
+
+                    <TextView
+                        android:id="@+id/fragment_history_item_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:fontFamily="sans-serif-light"
+                        android:text="10:30"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_history_item_expand_collapse"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/fragment_history_item_rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/fragment_history_item_rl2"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="92dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/fragment_history_item_place_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_location_on_white_24dp"
+                            android:tint="@color/textColorSecondary"/>
+
+                        <TextView
+                            android:id="@+id/fragment_history_item_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_gravity="bottom"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"
+                            android:text="Rosário"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_history_item_rl3"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/fragment_history_item_rl2"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="92dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/fragment_history_item_payment_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_attach_money_white_24dp"
+                            android:layout_below="@id/fragment_history_item_place_img"
+                            android:tint="@color/textColorSecondary"/>
+
+                        <TextView
+                            android:id="@+id/fragment_history_item_payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fragment_history_item_place"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="16dp"
+                            android:textColor="@color/md_green_500"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/fragment_history_item_payment_cash"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fragment_history_item_card_view"
+        style="@style/MarginPoint"
+        app:cardBackgroundColor="@color/background"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="4dp"
+        android:clickable="true"
+        android:elevation="2dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/fragment_history_item_category_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/background_category"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/fragment_history_item_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/fragment_dialog_categories_home"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/fragment_history_item_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_mode_edit_white_24dp"
+                        android:background="@drawable/bg_round_white_ripple"
+                        android:clickable="true"
+                        android:padding="6dp"
+                        android:layout_marginRight="12dp"
+                        android:tint="@color/md_grey_600"/>
+
+                    <ImageView
+                        android:id="@+id/fragment_history_item_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_delete_white_24dp"
+                        android:background="@drawable/bg_round_white_ripple"
+                        android:clickable="true"
+                        android:padding="6dp"
+                        android:tint="@color/md_grey_600"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_history_item_click_expand_collapse"
+                android:background="@color/background_header"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fragment_history_item_drop_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:foregroundGravity="center"
+                    android:clickable="true"
+                    android:layout_margin="8dp"
+                    android:padding="4dp"
+                    android:background="@drawable/bg_ripple"
+                    android:tint="@color/textColorPrimary"
+                    android:src="@drawable/ic_keyboard_arrow_down_white_24dp"/>
+
+                <LinearLayout
+                    android:id="@+id/fragment_history_item_ll"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_history_item_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif"
+                        android:text="R$ 25,70"/>
+
+                    <TextView
+                        android:id="@+id/fragment_history_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="6dp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/textColorSecondary"
+                        android:text="Strepsils"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:layout_below="@id/fragment_history_item_ll"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_history_item_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:fontFamily="sans-serif-light"
+                        android:text="21/07/2016"/>
+
+                    <TextView
+                        android:id="@+id/fragment_history_item_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:fontFamily="sans-serif-light"
+                        android:text="10:30"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_history_item_expand_collapse"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/fragment_history_item_rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/fragment_history_item_rl2"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="92dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/fragment_history_item_place_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_location_on_white_24dp"
+                            android:tint="@color/textColorSecondary"/>
+
+                        <TextView
+                            android:id="@+id/fragment_history_item_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_gravity="bottom"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/textColorSecondary"
+                            android:text="Rosário"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_history_item_rl3"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/fragment_history_item_rl2"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="92dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/fragment_history_item_payment_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_attach_money_white_24dp"
+                            android:layout_below="@id/fragment_history_item_place_img"
+                            android:tint="@color/textColorSecondary"/>
+
+                        <TextView
+                            android:id="@+id/fragment_history_item_payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fragment_history_item_place"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="16dp"
+                            android:textColor="@color/md_green_500"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/fragment_history_item_payment_cash"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>

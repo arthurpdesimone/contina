@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Plata</string>
+
+    <string name="fragment_dialog_paid_with">PAID WITH:</string>
+    <string name="fragment_dialog_who_paid">WHO PAID:</string>
+    <string name="fragment_history_item_payment_cash">CASH</string>
+    <string name="fragment_history_item_payment_card">CARD</string>
+    <string name="fragment_dialog_where_hint">Where?</string>
+    <string name="fragment_dialog_what_hint">What?</string>
+    <string name="fragment_dialog_price_hint">Price</string>
+    <string name="fragment_dialog_price_total" translatable="false">TOTAL</string>
+    <string name="activity_history">HISTORY</string>
+    <string name="activity_activities">ACTIVITIES</string>
+    <string name="fragment_dialog_new_item_save">SAVE</string>
+    <string name="fragment_dialog_new_item_cancel">CANCEL</string>
+    <string name="activity_settings_done">DONE</string>
+
+    <string name="fragment_dialog_categories_text">Choose the category:</string>
+    <string name="fragment_dialog_categories_health">HEALTH</string>
+    <string name="fragment_dialog_categories_restaurant">FOOD</string>
+    <string name="fragment_dialog_categories_market">STORE</string>
+    <string name="fragment_dialog_categories_entertainment">FUN</string>
+    <string name="fragment_dialog_categories_animals">PETS</string>
+    <string name="fragment_dialog_categories_home">HOME</string>
+    <string name="fragment_dialog_categories_electronics">ELECTRONIC</string>
+    <string name="fragment_dialog_categories_bank">BANK</string>
+    <string name="fragment_dialog_categories_personal">PERSONAL</string>
+    <string name="fragment_dialog_categories_clothing">CLOTHING</string>
+    <string name="fragment_dialog_categories_transport">TRANSPORT</string>
+    <string name="fragment_dialog_categories_others">OTHERS</string>
+
+    <string name="fragment_dialog_categories_health_m">Health</string>
+    <string name="fragment_dialog_categories_restaurant_m">Food</string>
+    <string name="fragment_dialog_categories_market_m">Store</string>
+    <string name="fragment_dialog_categories_entertainment_m">Fun</string>
+    <string name="fragment_dialog_categories_animals_m">Pets</string>
+    <string name="fragment_dialog_categories_home_m">Home</string>
+    <string name="fragment_dialog_categories_electronics_m">Electronic</string>
+    <string name="fragment_dialog_categories_bank_m">Bank</string>
+    <string name="fragment_dialog_categories_personal_m">Personal</string>
+    <string name="fragment_dialog_categories_clothing_m">Clothing</string>
+    <string name="fragment_dialog_categories_transport_m">Transport</string>
+    <string name="fragment_dialog_categories_others_m">Others</string>
+
+    <string name="fragment_history_item_undo">UNDO</string>
+
+    <string name="activity_settings_currency_title">Currency</string>
+    <string name="activity_settings_daynight_title">DayNight Mode</string>
+    <string name="activity_settings_daynight_text">This allows your app to automatically change to a light or dark theme</string>
+    <string name="activity_settings_info">All changes are automatically saved.</string>
+</resources>

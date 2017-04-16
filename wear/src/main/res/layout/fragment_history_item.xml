@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lighter_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/fragment_history_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <android.support.wearable.view.CircledImageView
+            android:id="@+id/fragment_history_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:circle_radius="16dp"
+            app:circle_color="@color/active_ui_element"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_local_hospital_white_18dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="R$ 123,50"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="23 Jan - 18:10"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/fragment_history_item_rl"
+        android:background="@color/dark_background"/>
+
+</RelativeLayout>
