@@ -1,70 +1,75 @@
-<LinearLayout
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/fragment_expenses_scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_expenses"
-        android:textSize="14sp"
-        android:gravity="center"
-        android:padding="10dp"
-        android:background="@color/darker_ui_element"
-        android:textColor="@color/white"
-        android:fontFamily="sans-serif-condensed"/>
-
-    <TextView
-        android:id="@+id/clock"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="12sp"
-        android:visibility="gone"
-        android:textColor="@color/light_blue_dark_background"
-        android:fontFamily="sans-serif-condensed-light"
-        android:layout_margin="5dp"
-        android:text="12:30"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp">
-
-        <ImageButton
-            android:id="@+id/fragment_expenses_primary_action_button"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:padding="12dp"
-            android:src="@drawable/ic_add_white_24dp"
-            android:background="@drawable/bg_round_light_blue_active_element" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_expenses"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <TextView
+            android:id="@+id/clock"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="18sp"
-            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:textColor="@color/light_blue_dark_background"
             android:fontFamily="sans-serif-condensed-light"
-            android:textColor="@color/white"
-            android:text="Add items"/>
+            android:layout_margin="5dp"
+            android:text="12:30"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <ImageButton
+                android:id="@+id/fragment_expenses_primary_action_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:src="@drawable/ic_add_white_24dp"
+                android:background="@drawable/bg_round_light_blue_active_element" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="@color/white"
+                android:text="Add items"/>
+
+        </LinearLayout>
+
+        <android.support.wearable.view.WearableRecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recycler_launcher_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical" />
 
     </LinearLayout>
 
-    <android.support.wearable.view.WearableRecyclerView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/recycler_launcher_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:scrollbars="vertical" />
+</android.support.v4.widget.NestedScrollView>
 
-</LinearLayout>

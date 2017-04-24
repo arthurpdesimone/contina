@@ -11,6 +11,7 @@ import android.support.wearable.view.drawer.WearableDrawerLayout;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
@@ -38,7 +39,7 @@ public class NewItemActivity extends WearableActivity {
 
         LinearLayout datePicker;
         LinearLayout timePicker;
-        LinearLayout pricePicker;
+        RelativeLayout pricePicker;
 
         categoryType = CategoryType.getCateroryTypebyId(
                 getIntent().getExtras().getInt("id"));
@@ -70,7 +71,13 @@ public class NewItemActivity extends WearableActivity {
             }
         });
 
-        pricePicker = (LinearLayout) findViewById(R.id.activity_new_item_price_ll);
+        pricePicker = (RelativeLayout) findViewById(R.id.activity_new_item_price_ll);
+        pricePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
         newItemCategory = (TextView) findViewById(R.id.activity_new_item_category);
         dateItemImage = (ImageView) findViewById(R.id.activity_new_item_date_image);
@@ -83,10 +90,9 @@ public class NewItemActivity extends WearableActivity {
         wearableDrawerLayout = (WearableDrawerLayout) findViewById(R.id.activity_new_item_drawer_layout);
 
         newItemCategory.setTextColor(getResources().getColor(categoryType.getColorAccent()));
-        newItemCategory.setText(categoryType.getName());
         Drawable drawable = getResources().getDrawable(R.drawable.bg_round);
         drawable.setColorFilter(getResources().getColor(categoryType.getColorLighterElement()), PorterDuff.Mode.SRC_OVER);
-        dateItemImage.setBackground(getResources().getDrawable(categoryType.getColorBackground()));
+        dateItemImage.setBackground(drawable);
         dateItemText.setTextColor(getResources().getColor(R.color.white));
         timeItemImage.setBackground(drawable);
         timeItemText.setTextColor(getResources().getColor(R.color.white));
@@ -94,7 +100,6 @@ public class NewItemActivity extends WearableActivity {
         priceItemText.setTextColor(getResources().getColor(R.color.white));
         saveItemButton.setCircleColor(getResources().getColor(categoryType.getColorActiveElement()));
         saveItemButton.setCircleBorderWidth(0f);
-        wearableDrawerLayout.setBackgroundColor(getResources().getColor(categoryType.getColorBackground()));
     }
 
     @Override
@@ -132,7 +137,6 @@ public class NewItemActivity extends WearableActivity {
         }
         else{
             newItemCategory.setTextColor(getResources().getColor(categoryType.getColorAccent()));
-            newItemCategory.setText(categoryType.getName());
             Drawable drawable = getResources().getDrawable(R.drawable.bg_round);
             drawable.setColorFilter(getResources().getColor(categoryType.getColorLighterElement()), PorterDuff.Mode.SRC_OVER);
             dateItemImage.setBackground(drawable);
@@ -142,8 +146,7 @@ public class NewItemActivity extends WearableActivity {
             priceItemImage.setBackground(drawable);
             priceItemText.setTextColor(getResources().getColor(R.color.white));
             saveItemButton.setCircleColor(getResources().getColor(categoryType.getColorActiveElement()));
-            saveItemButton.setBackground(null);
-            wearableDrawerLayout.setBackgroundColor(getResources().getColor(categoryType.getColorBackground()));
+            saveItemButton.setCircleBorderWidth(0f);
         }
     }
 }
